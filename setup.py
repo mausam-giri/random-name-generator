@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.0.1'
+VERSION = '0.1.1'
 DESCRIPTION = 'Prefix or Suffix file name with combination'
 
 with open("README.md", "r") as fh:

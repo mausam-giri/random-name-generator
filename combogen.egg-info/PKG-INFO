@@ -1,3 +1,21 @@
+Metadata-Version: 2.1
+Name: combogen
+Version: 0.1.1
+Summary: Prefix or Suffix file name with combination
+Home-page: https://github.com/byte2code/combogen
+Author: byte2code (Mausam Giri)
+Author-email: <mausamkumargiri@proton.me>
+License: UNKNOWN
+Keywords: python,combination,files,unique,random filename generator,unique prefix suffix
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
 
 # combogen
 
@@ -67,9 +85,6 @@ Returns:
 - str: fixed_string with random combination as per location 
 
 ```
-    from combogen import generate_combination
-```
-```
     print(generate_combination(4, fixed_string="ABC", location="start"))
         Output: ABCt857
     
@@ -81,3 +96,4 @@ Returns:
 ```
 
 --
+

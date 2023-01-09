@@ -1,0 +1,7 @@
+README.md
+setup.py
+combogen/__init__.py
+combogen.egg-info/PKG-INFO
+combogen.egg-info/SOURCES.txt
+combogen.egg-info/dependency_links.txt
+combogen.egg-info/top_level.txt
