@@ -1,26 +1,78 @@
+
 # prefix_combination_generator
+
+  
+
 ## Combination generator for filename, either prefix or suffix
 
+  
+
 This function takes 7 arguments:
+
 `generate_combination(nums, fixed_string="", location="middle", isUpper=True, isLower=True, digits=True, specialChar=True)`
 
 
-   Generates a random combination of numbers, uppercase letters, lowercase letters, digits, and special characters.
+
+  
+
+>  Generates random combination of characters based upon arguments and return fixed_string with combination
+
+Parameters:
+---------- 
+- nums: int
+
+    Length of random combination
+
+- fixed_string (Optional): str
+
+    default: ""
     
+    String in which random combination will be included
+    
+- location (Optional): str
 
->     Parameters:
->     nums (int): The number of characters in the combination.
->     fixed_string (str): A string that will be included in the combination at the specified location.
->     location (str): The location of the fixed string in the combination. Can be "front", "middle", or "back".
->     isUpper (bool): Include uppercase letters in the combination.
->     isLower (bool): Include lowercase letters in the combination.
->     digits (bool): Include digits in the combination.
->     specialChar (bool): Include special characters in the combination.
->     
->     Returns:
->     str: The generated combination.
+    default: "start"
+
+    values: "start", "middle", "end"
+
+    Location of fixed string in the combination
+
+- isUpper (Optional): bool
+
+    default: True
+    
+    Uppercase characters included in the combination
+
+- isLower (Optional): bool
+
+    default: True
+
+    Lowercase characters included in the combination
+
+- digits (Optional): bool
+
+    default: True
+
+    Digits included in the combination
+
+- specialChar (Optional): bool
+
+   default: False
+
+   Special Characters included in the combination
 
 
-    print(generate_combination(4, fixed_string="ABC", location="front"))
+Returns:
+---------- 
+- str: fixed_string with random combination as per location 
+
+```
+    print(generate_combination(4, fixed_string="ABC", location="start"))
+        Output: ABCt857
+    
     print(generate_combination(4, fixed_string="ABC", location="middle"))
-    print(generate_combination(4, fixed_string="ABC", location="back"))
+        Output: t8ABC57
+    
+    print(generate_combination(4, fixed_string="ABC", location="end"))
+        Output: t857ABC
+```
