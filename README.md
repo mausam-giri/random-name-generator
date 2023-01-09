@@ -2,7 +2,7 @@
 Combination generator for filename, either prefix or suffix
 
 This function takes 7 arguments:
-generate_combination(nums, fixed_string="", location="middle", isUpper=True, isLower=True, digits=True, specialChar=True)
+- generate_combination(nums, fixed_string="", location="middle", isUpper=True, isLower=True, digits=True, specialChar=True)
 
 """
     Generates a random combination of numbers, uppercase letters, lowercase letters, digits, and special characters.
@@ -21,7 +21,8 @@ generate_combination(nums, fixed_string="", location="middle", isUpper=True, isL
 """
 
 
-
+`
 print(generate_combination(4, fixed_string="ABC", location="front"))
 print(generate_combination(4, fixed_string="ABC", location="middle"))
 print(generate_combination(4, fixed_string="ABC", location="back"))
+`
