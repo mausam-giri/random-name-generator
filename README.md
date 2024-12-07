@@ -1,83 +1,83 @@
+# Combination Generator for Filenames
 
-# combogen
+Easily generate random combinations of characters to prepend, append, or insert in the middle of your filenames.
 
-  
+### Installation
 
-## Combination generator for filename, either prefix or suffix
+To get started, simply install the package via pip:
 
-  
-
-This function takes 7 arguments:
-
-`generate_combination(nums, fixed_string="", location="middle", isUpper=True, isLower=True, digits=True, specialChar=True)`
-
-
-
-  
-
->  Generates random combination of characters based upon arguments and return fixed_string with combination
-
-Parameters:
----------- 
-- nums: int
-
-    Length of random combination
-
-- fixed_string (Optional): str
-
-    default: ""
-    
-    String in which random combination will be included
-    
-- location (Optional): str
-
-    default: "start"
-
-    values: "start", "middle", "end"
-
-    Location of fixed string in the combination
-
-- isUpper (Optional): bool
-
-    default: True
-    
-    Uppercase characters included in the combination
-
-- isLower (Optional): bool
-
-    default: True
-
-    Lowercase characters included in the combination
-
-- digits (Optional): bool
-
-    default: True
-
-    Digits included in the combination
-
-- specialChar (Optional): bool
-
-   default: False
-
-   Special Characters included in the combination
-
-
-Returns:
----------- 
-- str: fixed_string with random combination as per location 
-
-```
-    from combogen import generate_combination
-```
-```
-    print(generate_combination(4, fixed_string="ABC", location="start"))
-        Output: ABCt857
-    
-    print(generate_combination(4, fixed_string="ABC", location="middle"))
-        Output: t8ABC57
-    
-    print(generate_combination(4, fixed_string="ABC", location="end"))
-        Output: t857ABC
+```bash
+pip install combogen
 ```
 
---
+### Usage
+
+The `generate_combination` function generates a random combination of characters based on your preferences and returns a string with a fixed part and the random combination.
+
+#### Function Signature
+
+```python
+generate_combination(nums, fixed_string="", location="middle", isUpper=True, isLower=True, digits=True, specialChar=True)
+```
+
+#### Parameters
+
+- **`nums`** (int):  
+  The length of the random combination.
+
+- **`fixed_string`** (str, optional):  
+  Default is `""`.  
+  The string in which the random combination will be inserted.
+
+- **`location`** (str, optional):  
+  Default is `"middle"`.  
+  Specifies the location of the fixed string in the combination.  
+  Possible values: `"start"`, `"middle"`, `"end"`.
+
+- **`isUpper`** (bool, optional):  
+  Default is `True`.  
+  Whether to include uppercase characters in the combination.
+
+- **`isLower`** (bool, optional):  
+  Default is `True`.  
+  Whether to include lowercase characters in the combination.
+
+- **`digits`** (bool, optional):  
+  Default is `True`.  
+  Whether to include digits in the combination.
+
+- **`specialChar`** (bool, optional):  
+  Default is `False`.  
+  Whether to include special characters in the combination.
+
+#### Returns
+
+- **str**: A string with the random combination inserted at the specified location.
+
+---
+
+### Examples
+
+```python
+from combogen import generate_combination
+
+# Example 1: Combination at the start
+print(generate_combination(4, fixed_string="ABC", location="start"))
+# Output: ABCt857
+
+# Example 2: Combination in the middle
+print(generate_combination(4, fixed_string="ABC", location="middle"))
+# Output: t8ABC57
+
+# Example 3: Combination at the end
+print(generate_combination(4, fixed_string="ABC", location="end"))
+# Output: t857ABC
+```
+
+---
+
+### Features
+
+- Generate random combinations of uppercase letters, lowercase letters, digits, and special characters.
+- Choose the location of your fixed string (start, middle, or end).
+- Highly customizable with options for character inclusion (uppercase, lowercase, digits, special characters).
